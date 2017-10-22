@@ -38,6 +38,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/logged', function(req, res){
+    console.log(googleProfile);
     res.render('logged', { user: googleProfile });
 });
 
